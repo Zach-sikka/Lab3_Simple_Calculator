@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Lab3_Simple_Calculator</string>
+    <string name="btn7">7</string>
+    <string name="btn8">8</string>
+    <string name="btn9">9</string>
+    <string name="btn4">4</string>
+    <string name="btn5">5</string>
+    <string name="btn6">6</string>
+    <string name="btn1">1</string>
+    <string name="btn2">2</string>
+    <string name="btn3">3</string>
+    <string name="btnX">X</string>
+    <string name="btn_minus" />
+    <string name="btnminus">-</string>
+    <string name="btn_plus">+</string>
+    <string name="btnx">x</string>
+    <string name="btn0">0</string>
+    <string name="btn_decimal">.</string>
+    <string name="btn_equals">=</string>
+    <string name="btnAC">AC</string>
+    <string name="btn_plus_minus">+/-</string>
+    <string name="btn_percent" />
+    <string name="btn_percentt">%</string>
+    <string name="btn_divide">/</string>
+</resources>

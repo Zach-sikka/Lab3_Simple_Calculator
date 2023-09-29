@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#302E2E"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/resultEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="150sp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textSize="75sp" />
+
+        <LinearLayout
+            android:id="@+id/buttonRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="btnClearClick"
+                android:text="@string/btnAC"
+                android:textColor="#FFFFFF"
+                android:textSize="38sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn_plus_minus"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="btnNegativeClick"
+                android:text="@string/btn_plus_minus"
+                android:textColor="#FFFFFF"
+                android:textSize="38sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn_percent"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="btnPercentClick"
+                android:text="@string/btn_percentt"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn_divide"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ff9f08"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="btnDivideClick"
+                android:text="@string/btn_divide"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn7"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn8"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn9"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btnX"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ff9f08"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="btnMultiplyClick"
+                android:text="@string/btnx"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn4"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn5"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn6"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ff9f08"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="btnMinusClick"
+                android:text="@string/btnminus"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn1"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn2"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn3"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ff9f08"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="btnAddClick"
+                android:text="@string/btn_plus"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="202dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn0"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btndecimal"
+                android:layout_width="99dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#807d7d"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="clickNumericalButton"
+                android:text="@string/btn_decimal"
+                android:textColor="#FFFFFF"
+                android:textSize="80sp"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/btn_equal"
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ff9f08"
+                android:insetLeft="2dp"
+                android:insetTop="2dp"
+                android:insetRight="2dp"
+                android:insetBottom="2dp"
+                android:onClick="btnResultsClick"
+                android:text="@string/btn_equals"
+                android:textColor="#FFFFFF"
+                android:textSize="75sp"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
